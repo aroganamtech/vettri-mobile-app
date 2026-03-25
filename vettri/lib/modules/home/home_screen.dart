@@ -29,10 +29,9 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: DealCarousel(),
             ),
-            const MovieCarousel(),
+            MovieCarousel(),
             FoodCarouselSection(),
             MovieSection(),
-
             OTTSection(),
             SizedBox(height: 32),
           ],
@@ -42,4 +41,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

@@ -17,7 +17,7 @@ class DealBanner extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFFFF5A1F).withOpacity(0.3),
+            color: const Color(0xFFFF5A1F).withValues(alpha: 0.3),
             blurRadius: 15,
             offset: const Offset(0, 8),
           ),

@@ -119,7 +119,7 @@ class _DealCarouselState extends State<DealCarousel> {
         borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
-            color: deal.gradientColors.first.withOpacity(0.3),
+            color: deal.gradientColors.first.withValues(alpha: 0.3),
             blurRadius: 15,
             offset: const Offset(0, 8),
           ),
@@ -127,14 +127,13 @@ class _DealCarouselState extends State<DealCarousel> {
       ),
       child: Stack(
         children: [
-          // Background Icon Pattern
           Positioned(
             right: -20,
             bottom: -20,
             child: Icon(
               deal.icon,
               size: 150,
-              color: Colors.white.withOpacity(0.15),
+              color: Colors.white.withValues(alpha: 0.15),
             ),
           ),
           Padding(
@@ -159,7 +158,7 @@ class _DealCarouselState extends State<DealCarousel> {
                       Text(
                         deal.subtitle,
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.9),
+                          color: Colors.white.withValues(alpha: 0.9),
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),

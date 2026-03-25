@@ -29,5 +29,4 @@ class AppRoutes {
     social: (context) => const SocialScreen(),
     entertainment: (context) => const EntertainmentScreen(),
   };
-
 }

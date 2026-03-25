@@ -23,26 +23,22 @@ class VettriPechuApp extends StatelessWidget {
           seedColor: const Color(0xFFFF5A1F),
           primary: const Color(0xFFFF5A1F),
           secondary: const Color(0xFFFF7A00),
-          background: const Color(0xFFF1F1F1),
+          surface: const Color(0xFFF1F1F1),
         ),
         textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      // 2. When calling MyHomePage, pass the title value
       home: const MyHomePage(title: 'Vettri Pechu'),
       routes: AppRoutes.routes,
     );
-
   }
 }
 
-// 1. Update MyHomePage class
 class MyHomePage extends StatelessWidget {
   final String title;
   const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
-    // 3. Return the rich HomeScreen UI as requested by the image
     return const HomeScreen();
   }
 }

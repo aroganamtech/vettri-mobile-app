@@ -12,7 +12,7 @@ class SearchBar extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withValues(alpha: 0.08),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -37,7 +37,7 @@ class SearchBar extends StatelessWidget {
           Container(
             height: 20,
             width: 1,
-            color: Colors.grey.withOpacity(0.3),
+            color: Color.fromRGBO(158, 158, 158, 0.3),
             margin: const EdgeInsets.symmetric(horizontal: 8),
           ),
           const Icon(Icons.location_on, color: Colors.grey, size: 18),

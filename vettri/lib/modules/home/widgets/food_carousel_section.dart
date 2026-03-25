@@ -161,7 +161,7 @@ class _FoodCarouselSectionState extends State<FoodCarouselSection> {
         borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -175,7 +175,6 @@ class _FoodCarouselSectionState extends State<FoodCarouselSection> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Image Section
               Stack(
                 children: [
                   ClipRRect(
@@ -198,7 +197,7 @@ class _FoodCarouselSectionState extends State<FoodCarouselSection> {
                           end: Alignment.bottomCenter,
                           colors: [
                             Colors.transparent,
-                            Colors.black.withOpacity(0.7),
+                            Colors.black.withValues(alpha: 0.7),
                           ],
                           stops: const [0.6, 1.0],
                         ),
@@ -223,7 +222,6 @@ class _FoodCarouselSectionState extends State<FoodCarouselSection> {
                   ),
                 ],
               ),
-              // Info Section
               Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Column(
