@@ -6,6 +6,7 @@ class DealItem {
   final String ctaText;
   final IconData icon;
   final List<Color> gradientColors;
+  final String imageUrl;
 
   const DealItem({
     required this.title,
@@ -13,5 +14,7 @@ class DealItem {
     required this.ctaText,
     required this.icon,
     required this.gradientColors,
+    required this.imageUrl,
   });
 }
+
